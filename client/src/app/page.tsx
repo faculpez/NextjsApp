@@ -1,14 +1,14 @@
-import { userData } from '@/components/userData'
-import React from 'react'
+import Users from '@/components/Users';
+import { userData } from '@/components/userData';
+import React from 'react';
 
 const Home = () => {
-  const users = userData
-  console.log(users)
   return (
-    <div>
-      Hello
-    </div>
-  )
+    <>
+      <h1>Welcome!</h1>
+      <Users users={userData} /> 
+    </>
+  );
 }
 
-export default Home
+export default Home;
